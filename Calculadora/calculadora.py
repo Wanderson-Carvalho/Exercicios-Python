@@ -21,16 +21,19 @@ def calculadora():
   # que será importada do arquivo operações. A operação irá receber os números digitados
   # pelo usuário para realizar o cálculo correspondente.
           if operacao == 1:
-              resultado = op.soma(num1, num2)
-              
+              operacao = 'Soma'
+              resultado = op.soma(num1, num2)              
           elif operacao == 2:
+              operacao = 'Subtração'
               resultado = op.subtracao(num1, num2)
           elif operacao == 3:
+              operacao = 'Multiplicação'
               resultado = op.multiplicao(num1, num2)
           else:
+              operacao = 'Divisão'
               resultado = op.divisao(num1, num2)
           break
-    return resultado  
+    return f'A {operacao} de {num1} e {num2} é = {resultado}'  
       
     
       
