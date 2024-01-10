@@ -1,6 +1,6 @@
 import operacoes as op
 from cabecalho_calculadora import cabecalho
-from menu_continuar import menu_continuar
+
 
 
 def calculadora():
